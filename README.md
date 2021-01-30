@@ -7,6 +7,7 @@ The code is still a bit of a mess and must be refactored. This is mostly because
 Here are some things I intend for the future:
 - Pokémon lore flavor text from Pokédexes from every game and generation that can be read one by one as you click a button. For now, it only shows one (and its positioning is a little off);
 - Fixing the Pokémon species family box bugs (specially the "evolves to" part, that never shows anything);
+- Fixing special case Pokémon names that won't show up, like Nidoran male and Nidoran female.
 - Styling the scroll bar in the moves box so it fits better with the overall styling of the page;
 - Clicking on a move will show a popup with detailed info about it;
 - A less ugly and crappy header.
