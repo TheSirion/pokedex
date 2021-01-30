@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokédex</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <h1 id="pokedex-logo">Pokédex</h1>
+      <div id="search-field" class="info-box">
+        <form method="GET">
+          <label for="pokemon-search-box">Search Pokémon </label>
+          <input
+            type="text"
+            name="pokemon-search-box"
+            id="pokemon-search-box"
+            placeholder="i.e. Pikachu"
+          />
+          <button type="submit" id="button">Go</button>
+        </form>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main id="layout-container">
+      <div id="img-box">
+        <img src="" alt="Pokémon" id="artwork" />
+
+        <div>
+          <div id="lore">
+            <div class="flavor-text-area">
+              <div class="flavor-text"></div>
+              <div class="flavor-text-buttons">
+                <button id="previous">Prev</button>
+                <button id="next">Next</button>
+              </div>
+            </div>
+          </div>
+          <div id="sprites">
+            <div class="sprite-group">
+              <h3>Default</h3>
+              <div class="info-box">
+                <div class="sprite">
+                  <img src="" alt="Front Default" id="front-default" />
+                </div>
+                <div class="sprite">
+                  <img src="" alt="Back Default" id="back-default" />
+                </div>
+              </div>
+            </div>
+            <div class="sprite-group">
+              <h3>Shiny</h3>
+              <div class="info-box">
+                <div class="sprite">
+                  <img src="" alt="Front Shiny" id="front-shiny" />
+                </div>
+                <div class="sprite">
+                  <img src="" alt="Back Shiny" id="back-shiny" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pokemon-info">
+        <h2>Basic Info</h2>
+        <div class="info-box">
+          <div id="basic-info">
+            <div id="name-and-id">
+              <h1 id="name" class="title">Name: --</h1>
+              <span id="id">Id: --</span>
+            </div>
+            <div class="title">Abilities</div>
+            <div>
+              <div id="genus">Genus: --</div>
+              <div id="weight">Weight: --</div>
+              <div id="height">Height: --</div>
+              <div id="types">
+                <div id="type-1">Type 1: --</div>
+                <div id="type-2">Type 2: --</div>
+              </div>
+            </div>
+            <div id="abilities-list"></div>
+          </div>
+        </div>
+        <h2>Moves</h2>
+        <div id="moves-box" class="info-box">
+          <ul id="moves-list"></ul>
+        </div>
+        <h2>Family</h2>
+        <div class="info-box">
+          <div id="evolution-family">
+            <div class="family">
+              <h3>Evolves from</h3>
+              <a id='pre-ev-link' href="#">
+                <img src="" alt="" id="evolves-from" />
+                <p id="pre-ev-name"></p>
+              </a>
+            </div>
+            <div class="family">
+              <h3>Evolves to</h3>
+              <a id="ev-link" href="#">
+                <img src="" alt="" id="evolves-to" />
+                <p id="ev-name"></p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- PokeAPI JS Wrapper -->
+    <script src="https://unpkg.com/pokeapi-js-wrapper/dist/index.js"></script>
+    <!-- Tippy.js -->
+    <script src="https://unpkg.com/popper.js@1"></script>
+    <script src="https://unpkg.com/tippy.js@4"></script>
+    <!-- Main Script File -->
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2, h3 {
+  margin: 1.5rem 0 .5rem 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* ================ HEADER ================ */
+header {
+  height: 150px;
+  background-color: rgb(226, 226, 133);
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#pokedex-logo {
+  margin-top: 0;
+  font-size: 5.5rem;
+}
+
+#search-field {
+  align-self: start;
+}
+
+input, button {
+  height: 30px;
+  border-radius: 4px;
+  border: none;
+}
+
+button {
+  padding: 0 20px 0 20px;
+  color: white;
+  background-color: cornflowerblue;
+}
+
+/* ================ MAIN ================ */
+#layout-container {
+  margin: 0;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+/* IMAGES */
+#img-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.sprite-group .info-box {
+  display: flex;
+}
+
+#artwork {
+  align-self: center;
+}
+
+#lore {
+  width: auto;
+  margin: 0 20%;
+  /* text-align: center; */
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr 1fr; */
+}
+
+.flavor-text {
+  margin: 10px;
+}
+
+#sprites {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/* INFO */
+#basic-info {
+  padding: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  border-radius: 8px;
+}
+
+.info-box {
+  padding: 8px;
+  background-color: rgba(245, 245, 245, 0.7);
+  border-radius: 8px;
+  box-shadow: 0 1px 10px -2px #EBEBEB;
+}
+
+#name-and-id {
+  display: flex;
+  /* justify-content: space-around; */
+}
+
+#id {
+  font-size: 1rem;
+  margin: 0 10px 0 10px;
+  align-self: flex-end;
+}
+
+.title {
+  width: fit-content;
+  font-size: 1.5rem;
+}
+
+#types {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.type {
+  color: white;
+  width: 100%;
+  border-radius: 4px;
+  text-align: center;
+}
+
+#img-box {
+  display: flex;
+  justify-content: start;
+}
+
+#pokemon-image {
+  height: fit-content;
+}
+
+#moves-box {
+  display: flex;
+  flex-direction: column;
+  height: 290px;
+}
+
+#moves-list {
+  padding: 8px;
+  list-style: none;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.moves-list-small {
+  overflow-y: hidden !important;
+}
+
+.move {
+  padding: auto;
+  margin: 4px 0;
+}
+
+#abilities-list {
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: flex-end;
+}
+
+#abilities-list > div {
+  justify-self: flex-start;
+}
+
+.ability {
+  color: white;
+  height: auto;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#evolution-family {
+  display: flex;
+  justify-content: space-around;
+}
+
+.family {
+  text-align: center;
+}
+.family p {
+  margin-top: 0;
+}
