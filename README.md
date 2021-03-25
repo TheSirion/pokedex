@@ -1,5 +1,5 @@
 # Pokédex Web App
-## What do you want to know about your favourite Pokémon?
+## What do you want to know about your favorite Pokémon?
 
 This is a simple WIP web app build for fun and practice with only vanilla HTML, CSS and JavaScript, and consuming the [PokéAPI](https://pokeapi.co/). 
 The code is still a bit of a mess and must be refactored. This is mostly because I build everything without much of a plan, just an idea and a lot of passion and improvisation. There are also buggy and missing features that I mean to fix ASAP, so please bear with me. 

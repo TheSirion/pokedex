@@ -1,7 +1,7 @@
 // import tippy from 'tippy.js';
 
 // connection to PokeAPI
-const P = new Pokedex.Pokedex();
+
 
 // BASIC POKÉMON INFO
 const pokemonName = document.getElementById("name");
